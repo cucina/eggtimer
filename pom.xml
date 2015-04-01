@@ -154,7 +154,7 @@
 					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
 						<artifactId>findbugs-maven-plugin</artifactId>
-						<version>${findbugs.version}</version>
+						<version>3.0.1</version>
 					</plugin>
 				</plugins>
 			</build>
@@ -163,17 +163,24 @@
 					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
 						<artifactId>findbugs-maven-plugin</artifactId>
-						<version>${findbugs.version}</version>
+						<version>3.0.1</version>
 					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-checkstyle-plugin</artifactId>
-						<version>${checkstyle.version}</version>
+						<version>2.15</version>
+						<reportSets>
+							<reportSet>
+								<reports>
+									<report>checkstyle</report>
+								</reports>
+							</reportSet>
+						</reportSets>
 					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-report-plugin</artifactId>
-						<version>${surefire.reportplugin.version}</version>
+						<version>2.18.1</version>
 					</plugin>
 				</plugins>
 			</reporting>
