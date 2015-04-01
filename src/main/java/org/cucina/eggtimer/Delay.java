@@ -26,7 +26,7 @@ public class Delay {
      * @return JAVADOC.
      */
     @RequestMapping("/delay")
-    boolean delay(@RequestParam
+    public boolean delay(@RequestParam
     long time) {
         try {
             Thread.sleep(time);

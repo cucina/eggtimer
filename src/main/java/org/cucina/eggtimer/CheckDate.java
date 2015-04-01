@@ -19,18 +19,8 @@ import org.cucina.eggtimer.service.TemporalRepository;
 @RestController
 @RequestMapping(value = "/checkDate")
 public class CheckDate {
+	@Autowired
     private TemporalRepository temporalRepository;
-
-    /**
-     * Creates a new TemporalControl object.
-     *
-     * @param temporalRepository
-     *            JAVADOC.
-     */
-    @Autowired
-    public CheckDate(TemporalRepository temporalRepository) {
-        this.temporalRepository = temporalRepository;
-    }
 
     /**
      * JAVADOC Method Level Comments
